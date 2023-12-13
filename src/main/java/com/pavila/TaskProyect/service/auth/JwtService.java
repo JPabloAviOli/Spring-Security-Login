@@ -46,7 +46,6 @@ public class JwtService {
     }
 
     public String extractUsername(String jwt) {
-        //extraer todos los claims o propiedades del payload, agarrar el subject y devolverlo
         return extractAllClaims(jwt).getSubject();
     }
 

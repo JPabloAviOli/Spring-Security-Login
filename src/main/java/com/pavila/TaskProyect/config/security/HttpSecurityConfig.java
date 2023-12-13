@@ -27,7 +27,7 @@ import java.util.List;
 public class HttpSecurityConfig {
 
     @Autowired
-    private AuthenticationProvider daoAuthProvider;//está en el securityBeansInjector
+    private AuthenticationProvider daoAuthProvider;
 
     @Autowired
     private JwtAuthenticationFilter jwtAuthenticationFilter;
@@ -39,7 +39,6 @@ public class HttpSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
 
-        //este build construye un defaultSecurityFilterChain que implementa la interfaz securityFilterChain
         return httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement( session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
@@ -54,7 +53,7 @@ public class HttpSecurityConfig {
     }
 
     private static void buildRequestMatchers(AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry authRequest) {
-        //Autorización de endpoints de tarea
+
         authRequest.requestMatchers(HttpMethod.GET, "task/all")
                 //.hasAuthority(RolePermission.READ_ALL_TASKS.name())
                 .hasRole(Role.USER.name());

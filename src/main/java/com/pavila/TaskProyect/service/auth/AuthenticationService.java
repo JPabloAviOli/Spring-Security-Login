@@ -62,15 +62,15 @@ public class AuthenticationService {
     }
 
     public AuthenticationResponse login(AuthenticationRequest authRequest) {
-        //creamos el objeto para el login
+
         Authentication authentication = new UsernamePasswordAuthenticationToken(
                 authRequest.getUsername(), authRequest.getPassword()
         );
-        //hacemos el proceso de login
+
         authenticationManager.authenticate(authentication);
-        //obtenemos los detalles del usuario que se acaba de login
+
         User userDetails = userService.findOneByUsername(authRequest.getUsername()).get();
-        //creamos y devolvemos el token en nuestro dto.
+
         String jwt = jwtService.generateToken(userDetails,generateExtraClaims(userDetails));
 
         return AuthenticationResponse.builder()
@@ -80,11 +80,9 @@ public class AuthenticationService {
 
     public boolean validateToken(String jwt) {
         try {
-            //sí logra extraer el username exitosamente
             jwtService.extractUsername(jwt);
             return true;
-        }catch (Exception e){ //si lanza un error
-            System.out.println(e.getMessage());//para saber qué error nos da
+        }catch (Exception e){
             return false;
         }
 

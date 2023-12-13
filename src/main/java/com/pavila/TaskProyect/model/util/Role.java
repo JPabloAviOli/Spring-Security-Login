@@ -23,7 +23,13 @@ public enum Role {
 
     ADMINISTRATOR(Arrays.asList(
             RolePermission.READ_ALL_USERS,
-            RolePermission.READ_MY_PROFILE
+            RolePermission.READ_MY_PROFILE,
+            RolePermission.READ_ALL_TASKS,
+            RolePermission.READ_ONE_TASK,
+            RolePermission.CREATE_ONE_TASK,
+            RolePermission.UPDATE_ONE_TASK,
+            RolePermission.DELETE_ONE_TASK,
+            RolePermission.COMPLETED_ONE_TASK
 
     ));
 

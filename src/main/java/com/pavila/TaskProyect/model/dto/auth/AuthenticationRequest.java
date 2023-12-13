@@ -1,6 +1,5 @@
 package com.pavila.TaskProyect.model.dto.auth;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
