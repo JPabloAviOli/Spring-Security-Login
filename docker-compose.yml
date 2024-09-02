@@ -1,0 +1,43 @@
+
+
+services:
+
+  db-login:
+    container_name: mysql-database
+    image: mysql:8.0.33
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql-login:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    restart: always
+
+  secure-login:
+    container_name: java-app-login
+    depends_on:
+      - db-login
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: my-app-login
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: always
+
+  mail-dev:
+    container_name: mail-server
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+    env_file:
+      - .env
+
+volumes:
+  mysql-login:
