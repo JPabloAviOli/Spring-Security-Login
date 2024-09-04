@@ -108,7 +108,7 @@ docker compose down
 ```
 ## Pruebas con Postman
 
-Para facilitar la prueba de nuestra API, hemos creado una colección de Postman. Puedes descargarla [aquí](ruta/de/tu/coleccion).
+Para facilitar la prueba de nuestra API, hemos creado una colección de Postman. Puedes descargarla [aquí](postman/SecureLogin-RESTful-API.postman_collection.json).
 
 ### Ejemplo de Prueba en Postman
 
