@@ -101,12 +101,30 @@ Si prefieres clonar el repositorio y usar Docker Compose para construir y gestio
 - La interfaz de MailDev estará disponible en [http://localhost:1080](http://localhost:1080) y su servidor SMTP en el puerto 1025.
 
 ## Detener los Servicios
+Para detener y eliminar todos los contenedores, redes y volúmenes definidos en el archivo `docker-compose.yml`, usa:
+    
+```bash
+docker compose down
+```
+## Pruebas con Postman
 
-    Para detener y eliminar todos los contenedores, redes y volúmenes definidos en el archivo `docker-compose.yml`, usa:
+Para facilitar la prueba de nuestra API, hemos creado una colección de Postman. Puedes descargarla [aquí](ruta/de/tu/coleccion).
 
-    ```bash
-    docker compose down
+### Ejemplo de Prueba en Postman
 
+Aquí se muestra una captura de una solicitud de autenticación en Postman:
+
+![Prueba en Postman](ruta/a/la/imagen.png)
+
+## Documentación con Swagger
+
+Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva en la siguiente URL cuando la aplicación esté corriendo: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+
+### Ejemplo de la Interfaz de Swagger
+
+A continuación, se muestra un ejemplo de cómo luce la interfaz de Swagger:
+
+![Interfaz de Swagger](ruta/a/la/imagen.png)        
 ## Desafíos y Aprendizajes
 
 - **Integración de Docker**: Configurar Docker y Docker Compose para crear un entorno de desarrollo completo y fácilmente desplegable.
