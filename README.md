@@ -9,6 +9,7 @@ SecureLoginApp es un sistema de autenticación que gestiona el inicio de sesión
 - **Autenticación Segura**: Implementación de JWT para proteger las rutas y gestionar sesiones de usuario mediante roles.
 - **Registro y Activación de Cuentas**: Verificación de cuenta a través de correo electrónico para garantizar la autenticidad del usuario.
 - **Gestión de Contraseñas**: Funcionalidades para cambiar y restablecer contraseñas, mejorando la experiencia de usuario y la seguridad.
+- **Manejo de Errores Basado en Aspectos**: Implementación de una arquitectura orientada a aspectos utilizando `@RestControllerAdvice`, lo que permite un manejo de excepciones centralizado y coherente en toda la aplicación. Esto asegura que las respuestas a errores sean uniformes y alineadas con el protocolo HTTP, mejorando la mantenibilidad y robustez del sistema.
 - **Arquitectura Sólida**: Uso del patrón Builder para la creación de DTOs, asegurando un código limpio y mantenible.
 - **Documentación de API**: Integración de SpringDoc OpenAPI para documentar y probar las API de forma sencilla.
 - **Contenedorización**: Docker y Docker Compose para facilitar la configuración y el despliegue del proyecto en diferentes entornos.
