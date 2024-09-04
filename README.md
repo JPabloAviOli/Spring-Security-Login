@@ -119,6 +119,13 @@ Aquí se muestra una captura de una solicitud de autenticación en Postman:
 ## Documentación con Swagger
 
 Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva en la siguiente URL cuando la aplicación esté corriendo: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+### Cómo Importar la Colección en Postman
+
+1. Abre Postman.
+2. Haz clic en el botón **Import** en la esquina superior izquierda.
+3. Selecciona **Upload Files**.
+4. Navega al archivo JSON de la colección que descargaste y selecciónalo.
+5. La colección se importará a Postman y aparecerá en tu panel de colecciones.
 
 ### Ejemplo de la Interfaz de Swagger
 
