@@ -62,7 +62,7 @@ public class HttpSecurityConfig {
                         "/webjars/**",
                         "/swagger-ui.html",
                         "/swagger-ui/index.html",
-                        "doc/swagger-ui/**"
+                        "/doc/swagger-ui/**"
                 )
                 .permitAll()
                 .anyRequest()

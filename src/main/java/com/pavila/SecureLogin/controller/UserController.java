@@ -18,7 +18,7 @@ public class UserController {
 
     private final AuthenticationService authenticationService;
 
-    @PostMapping("register")
+    @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody @Valid RegisteredUserRequest userRequest) throws MessagingException {
         authenticationService.registerUser(userRequest);
         return ResponseEntity.status(HttpStatus.CREATED).build();

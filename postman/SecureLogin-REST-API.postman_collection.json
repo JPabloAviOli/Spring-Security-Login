@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "1f88f6e1-4b85-40c6-8a87-9cfc5025f6ad",
     "name": "SecureLogin RESTful API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "29693181"
   },
   "item": [
@@ -34,7 +34,16 @@
             }
           }
         },
-        "url": "{{base_url}}/user/register",
+        "url": {
+          "raw": "{{base_url}}/user/register",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "user",
+            "register"
+          ]
+        },
         "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
       },
       "response": []
@@ -60,18 +69,18 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{base_url}}/auth/authenticate?token",
+          "raw": "{{base_url}}/auth/activate-account?token=938635",
           "host": [
             "{{base_url}}"
           ],
           "path": [
             "auth",
-            "authenticate"
+            "activate-account"
           ],
           "query": [
             {
               "key": "token",
-              "value": null
+              "value": "938635"
             }
           ]
         },
@@ -108,7 +117,16 @@
             }
           }
         },
-        "url": "{{base_url}}/auth/authenticate",
+        "url": {
+          "raw": "{{base_url}}/auth/authenticate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "authenticate"
+          ]
+        },
         "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
       },
       "response": []
@@ -235,9 +253,13 @@
       "request": {
         "auth": {
           "type": "bearer",
-          "bearer": {
-            "token": ""
-          }
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
         },
         "method": "PATCH",
         "header": [],
@@ -250,7 +272,16 @@
             }
           }
         },
-        "url": "{{base_url}}/auth/forgot-password",
+        "url": {
+          "raw": "{{base_url}}/auth/forgot-password",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "forgot-password"
+          ]
+        },
         "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
       },
       "response": []
@@ -327,9 +358,13 @@
       "request": {
         "auth": {
           "type": "bearer",
-          "bearer": {
-            "token": ""
-          }
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
         },
         "method": "POST",
         "header": [],
@@ -386,9 +421,13 @@
       "request": {
         "auth": {
           "type": "bearer",
-          "bearer": {
-            "token": ""
-          }
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
         },
         "method": "GET",
         "header": [],
@@ -407,7 +446,6 @@
             "{{base_url}}"
           ],
           "path": [
-            "",
             "test"
           ],
           "query": [
@@ -423,10 +461,32 @@
       "response": []
     }
   ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
   "variable": [
     {
       "key": "base_url",
-      "value": "http://localhost:8080/api/v1/"
+      "value": "http://localhost:8080/api/v1"
     }
   ]
 }
