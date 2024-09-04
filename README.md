@@ -117,18 +117,19 @@ Para facilitar la prueba de nuestra API, hemos creado una colección de Postman.
 3. Selecciona **Upload Files**.
 4. Navega al archivo JSON de la colección que descargaste y selecciónalo.
 5. La colección se importará a Postman y aparecerá en tu panel de colecciones.
-6. 
-### Ejemplo de Prueba en Postman
+    
+### Ejemplos de Prueba en Postman
 
-Aquí se muestra una captura de una solicitud de autenticación en Postman:
+### Solicitud Exitosa para Registrar un Usuario
+
+Aquí se muestra una captura de una solicitud que fue exitosa para registrar un usuario en Postman:
+
 
 ![Prueba en Postman](ruta/a/la/imagen.png)
 
 ## Documentación con Swagger
 
-Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva en la siguiente URL cuando la aplicación esté corriendo: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
-
-### Ejemplo de la Interfaz de Swagger
+Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva en la siguiente URL cuando la aplicación esté corriendo: [http://localhost:8080/api/v1/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
 A continuación, se muestra un ejemplo de cómo luce la interfaz de Swagger:
 
