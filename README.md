@@ -33,6 +33,8 @@ SecureLoginApp es un sistema de autenticación que gestiona el inicio de sesión
 
 - **Docker Desktop (para Windows y macOS)**: Si estás utilizando Windows o macOS, Docker Desktop es necesario para proporcionar una interfaz gráfica y facilitar la gestión de Docker. Docker Desktop incluye Docker Daemon y otros componentes necesarios para el funcionamiento de Docker en estos sistemas operativos.
 
+[Docker Desktop - Página Principal](https://www.docker.com/products/docker-desktop)
+
 ## Ejecutar la Aplicación
 
 Si has descargado la imagen de la aplicación desde Docker Hub o has clonado el repositorio, puedes usar Docker Compose para levantar toda la aplicación y sus servicios asociados.
