@@ -46,7 +46,7 @@ Si deseas descargar y ejecutar la imagen directamente desde Docker Hub, sigue es
 1. **Descargar la Imagen**
 
     ```bash
-    docker pull <tu-usuario>/secure-login-app:latest
+    docker pull jpabloavioli/secure-login-app:latest
     ```
 
 2. **Ejecutar la Imagen**
@@ -54,7 +54,7 @@ Si deseas descargar y ejecutar la imagen directamente desde Docker Hub, sigue es
     Después de descargar la imagen, puedes ejecutar un contenedor basado en ella con el siguiente comando:
 
     ```bash
-    docker run -d -p 8080:8080 --name secure-login-app <tu-usuario>/secure-login-app:latest
+    docker run -d -p 8080:8080 --name secure-login-app jpabloavioli/secure-login-app:latest
     ```
 
     Esto iniciará un contenedor en segundo plano y mapeará el puerto 8080 del contenedor al puerto 8080 de tu máquina local.
