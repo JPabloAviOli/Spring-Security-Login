@@ -133,10 +133,9 @@ Conectate al servidor de maildev en el puerto [1080](http://localhost:1080/) par
 
 ### Activar cuenta
 
-Ahora podemos probar el token para validar nuestra cuenta con el token recibido en nuestro email:
+Ahora podemos utilizar el token recibido por correo electrónico para validar nuestra cuenta:
 
 ![activar-cuenta](https://github.com/user-attachments/assets/8e9cd3bc-64e4-44cd-aad3-53d24080ff93)
-
 
 ## Documentación con Swagger
 
@@ -146,7 +145,7 @@ A continuación, se muestra un ejemplo de cómo luce la interfaz de Swagger:
 
 ![interfaz-swagger](https://github.com/user-attachments/assets/bf6dd555-f36d-47e8-b4be-1cfabcb65009)
 
-### Prueba de Autenticación de usuario
+### Prueba de Autenticación
 
 En esta prueba, enviaremos una contraseña incorrecta para verificar cómo se manejan los errores:
 ![autenticar-error](https://github.com/user-attachments/assets/f064da70-cf00-4c88-af88-b0e4d303ba07)
@@ -157,6 +156,15 @@ En caso de un error de autenticación (como el ingreso de una contraseña incorr
 
 ![mensaje-error](https://github.com/user-attachments/assets/57f07d99-4839-4e94-850b-d6bc6e243038)
 
+### Prueba de autenticación exitosa
+
+En esta prueba, enviaremos las credenciales correctas para autenticarnos como un usuario válido de la aplicación:
+
+![autenticar-exito](https://github.com/user-attachments/assets/2fa46a78-4341-4b11-aa2a-aea852691748)
+
+Al autenticarnos exitosamente, recibimos nuestro JSON Web Token (JWT), el cual utilizaremos para acceder a las rutas protegidas de la aplicación:
+
+![mensaje-ok](https://github.com/user-attachments/assets/f85f40bf-fdcf-480d-96b7-0b2269ceab89)
     
 ## Desafíos y Aprendizajes
 
