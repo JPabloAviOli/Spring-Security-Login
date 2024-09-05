@@ -176,7 +176,17 @@ Para facilitar la prueba de nuestra API, hemos creado una colección de Postman.
 - Si todo el proceso es exitoso, se recibirá una respuesta con el estado 200 OK, confirmando el restablecimiento de la contraseña.
 
 ![respuesta-exitosa](https://github.com/user-attachments/assets/fd5cf2f3-ace0-4c9d-a209-c55dfe9cae31)
-   
+
+### Proceso para cambiar contraseña de un usuario autenticado
+
+- **Agrega el Encabezado de Autenticación**
+
+![bearer-token](https://github.com/user-attachments/assets/f664990b-1e12-4fdc-bc6d-6754d67d2c71)
+
+- **Envía la solicitud, si todo sale bien recibiras una respuesta 200 OK**:
+
+![cambiar-contra](https://github.com/user-attachments/assets/1fbdce71-b87e-49a9-803d-c04795fa85fd)
+
 ## Desafíos y Aprendizajes
 
 - **Integración de Docker**: Configurar Docker y Docker Compose para crear un entorno de desarrollo completo y fácilmente desplegable.
