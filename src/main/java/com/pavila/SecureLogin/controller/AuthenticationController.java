@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -49,6 +50,7 @@ public class AuthenticationController {
         return ResponseEntity.ok().build();
     }
 
+    @Secured("USER")
     @PatchMapping("/change-password")
     public ResponseEntity<?> changePassword(@RequestBody @Valid ChangePasswordRequest request, Principal connectedUser){
         authenticationService.changePassword(request, connectedUser);
