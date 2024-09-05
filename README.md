@@ -96,18 +96,19 @@ Si prefieres clonar el repositorio y usar Docker Compose para construir y gestio
 
     Esto iniciará todos los servicios necesarios para tu aplicación en modo "detach" (en segundo plano).
 
-### Acceder a la Aplicación
+5. **Acceder a la Aplicación**
 
 - La aplicación estará disponible en [http://localhost:8080](http://localhost:8080).
 - La base de datos MySQL estará disponible en el puerto 3308.
 - La interfaz de MailDev estará disponible en [http://localhost:1080](http://localhost:1080) y su servidor SMTP en el puerto 1025.
 
-## Detener los Servicios
-Para detener y eliminar todos los contenedores, redes y volúmenes definidos en el archivo `docker-compose.yml`, usa:
+6. **Detener los Servicios**
+
+    Para detener y eliminar todos los contenedores, redes y volúmenes definidos en el archivo `docker-compose.yml`, usa:
     
-```bash
-docker compose down
-```
+    ```bash
+    docker compose down
+    ```
 ## Pruebas con Postman
 
 Para facilitar la prueba de nuestra API, hemos creado una colección de Postman. Puedes descargarla [aquí](postman/SecureLogin-REST-API.postman_collection.json).
@@ -194,9 +195,9 @@ Si deseas contribuir al proyecto, sigue estos pasos:
 
 Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
 
-## Autores
+## Autor
 
-- Jesús Pablo Avila Olivar - Autor principal [LinkedIn](https:/https://www.linkedin.com/in/pablo-avila-olivar/)
+- **Jesús Pablo Avila Olivar** - Autor principal [LinkedIn](https:/https://www.linkedin.com/in/pablo-avila-olivar/)
 
 ## Enlaces Útiles
 
