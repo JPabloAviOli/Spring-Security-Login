@@ -140,11 +140,24 @@ Ahora podemos probar el token para validar nuestra cuenta con el token recibido 
 
 ## Documentación con Swagger
 
-Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva en la siguiente URL cuando la aplicación esté corriendo: [http://localhost:8080/api/v1/swagger-ui.html](http://localhost:8080/swagger-ui.html).
+Nuestra API está documentada con Swagger. Puedes acceder a la documentación interactiva a través de la siguiente URL cuando la aplicación esté en ejecución: [Swagger UI](http://localhost:8080/api/v1/swagger-ui.html).
 
 A continuación, se muestra un ejemplo de cómo luce la interfaz de Swagger:
 
-![Interfaz de Swagger](ruta/a/la/imagen.png)        
+![interfaz-swagger](https://github.com/user-attachments/assets/bf6dd555-f36d-47e8-b4be-1cfabcb65009)
+
+### Prueba de Autenticación de usuario
+
+En esta prueba, enviaremos una contraseña incorrecta para verificar cómo se manejan los errores:
+![autenticar-error](https://github.com/user-attachments/assets/f064da70-cf00-4c88-af88-b0e4d303ba07)
+
+### Mensaje de Error Personalizado
+
+En caso de un error de autenticación (como el ingreso de una contraseña incorrecta), el sistema responde con un mensaje de error personalizado. Esto asegura que el usuario reciba información clara sobre el problema y cómo puede resolverlo.
+
+![mensaje-error](https://github.com/user-attachments/assets/57f07d99-4839-4e94-850b-d6bc6e243038)
+
+    
 ## Desafíos y Aprendizajes
 
 - **Integración de Docker**: Configurar Docker y Docker Compose para crear un entorno de desarrollo completo y fácilmente desplegable.
