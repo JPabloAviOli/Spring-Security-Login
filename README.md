@@ -66,10 +66,10 @@ Si prefieres clonar el repositorio y usar Docker Compose para construir y gestio
 1. **Clonar el Repositorio**
 
     ```bash
-    git clone https://github.com/tuusuario/SecureLoginApp.git
+    git clone https://github.com/JPabloAviOli/Spring-Security-Login.git
     ```
 
-2. **Navegar al Directorio del Proyecto**
+2. **Navegar al Directorio del Proyecto o abrir en el IDE de tu preferencia**
 
     ```bash
     cd SecureLoginApp
