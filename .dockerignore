@@ -1,0 +1,17 @@
+target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+### GIT ###
+.git/
+.gitignore
+
+### Docker ###
+Dockerfile
+
+### VS Code ###
+.vscode/
+
