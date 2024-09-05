@@ -187,6 +187,11 @@ Para facilitar la prueba de nuestra API, hemos creado una colección de Postman.
 
 ![cambiar-contra](https://github.com/user-attachments/assets/1fbdce71-b87e-49a9-803d-c04795fa85fd)
 
+### Proceso logout
+- Descripción: El método logout invalida el token de sesión del usuario. Siempre devuelve un código 200 OK para indicar que la solicitud ha sido procesada, independientemente del estado del token.
+
+![logout](https://github.com/user-attachments/assets/beefeb89-3ea9-446f-a9e6-c0141a7706e3)
+
 ## Desafíos y Aprendizajes
 
 - **Integración de Docker**: Configurar Docker y Docker Compose para crear un entorno de desarrollo completo y fácilmente desplegable.
