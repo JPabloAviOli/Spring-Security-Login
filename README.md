@@ -122,10 +122,21 @@ Para facilitar la prueba de nuestra API, hemos creado una colección de Postman.
 
 ### Solicitud Exitosa para Registrar un Usuario
 
-Aquí se muestra una captura de una solicitud que fue exitosa para registrar un usuario en Postman:
+Aquí se muestra una captura de una solicitud que fue exitosa para registrar un usuario:
 
+![registro-usuario](https://github.com/user-attachments/assets/52a67607-c223-46c6-b21c-73536c393a54)
 
-![Prueba en Postman](ruta/a/la/imagen.png)
+### MailDev
+Conectate al servidor de maildev en el puerto [1080](http://localhost:1080/) para verificar que te ha llegado el token de validacion de email: 
+
+![email-token](https://github.com/user-attachments/assets/36276fba-bfe9-4cac-92c7-2c903325bad5)
+
+### Activar cuenta
+
+Ahora podemos probar el token para validar nuestra cuenta con el token recibido en nuestro email:
+
+![activar-cuenta](https://github.com/user-attachments/assets/8e9cd3bc-64e4-44cd-aad3-53d24080ff93)
+
 
 ## Documentación con Swagger
 
