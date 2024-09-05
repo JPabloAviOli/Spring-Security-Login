@@ -37,31 +37,9 @@ SecureLoginApp es un sistema de autenticación que gestiona el inicio de sesión
 
 ## Ejecutar la Aplicación
 
-Si has descargado la imagen de la aplicación desde Docker Hub o has clonado el repositorio, puedes usar Docker Compose para levantar toda la aplicación y sus servicios asociados.
-
-### Descargar la Imagen de Docker Hub
-
-Si deseas descargar y ejecutar la imagen directamente desde Docker Hub, sigue estos pasos:
-
-1. **Descargar la Imagen**
-
-    ```bash
-    docker pull jpabloavioli/secure-login-app:latest
-    ```
-
-2. **Ejecutar la Imagen**
-
-    Después de descargar la imagen, puedes ejecutar un contenedor basado en ella con el siguiente comando:
-
-    ```bash
-    docker run -d -p 8080:8080 --name secure-login-app jpabloavioli/secure-login-app:latest
-    ```
-
-    Esto iniciará un contenedor en segundo plano y mapeará el puerto 8080 del contenedor al puerto 8080 de tu máquina local.
-
 ### Clonar el Repositorio y Usar Docker Compose
 
-Si prefieres clonar el repositorio y usar Docker Compose para construir y gestionar los servicios, sigue estos pasos:
+Clona el repositorio y usa Docker Compose para construir y gestionar los servicios, sigue estos pasos:
 
 1. **Clonar el Repositorio**
 
@@ -103,7 +81,7 @@ Si prefieres clonar el repositorio y usar Docker Compose para construir y gestio
 - La interfaz de MailDev estará disponible en [http://localhost:1080](http://localhost:1080) y su servidor SMTP en el puerto 1025.
 
 6. **Detener los Servicios**
-
+   
     Para detener y eliminar todos los contenedores, redes y volúmenes definidos en el archivo `docker-compose.yml`, usa:
     
     ```bash
