@@ -4,6 +4,7 @@ import com.pavila.SecureLogin.model.dto.ChangePasswordRequest;
 import com.pavila.SecureLogin.model.dto.auth.AuthenticationRequest;
 import com.pavila.SecureLogin.model.dto.auth.AuthenticationResponse;
 import com.pavila.SecureLogin.service.auth.AuthenticationService;
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.mail.MessagingException;
@@ -60,6 +61,7 @@ public class AuthenticationController {
         return ResponseEntity.ok().build();
     }
 
+    @Hidden
     @GetMapping("/validate-token")
     public ResponseEntity<Boolean> validateToken(@RequestParam String jwt){
         boolean isTokenValid = authenticationService.isJwtValid(jwt);
