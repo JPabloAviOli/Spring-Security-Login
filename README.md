@@ -220,7 +220,7 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## Autor
 
-- **Jesús Pablo Avila Olivar** - Autor principal [LinkedIn](https:/https://www.linkedin.com/in/pablo-avila-olivar/)
+- **Jesús Pablo Avila Olivar** - Autor principal [LinkedIn](https://www.linkedin.com/in/pablo-avila-olivar/)
 
 ## Enlaces Útiles
 
